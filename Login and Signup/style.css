@@ -1,0 +1,175 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(at 18% 99%, rgb(223, 229, 113) 0px, transparent 50%) repeat scroll 0% 0%, 
+            radial-gradient(at 97% 8%, rgb(118, 249, 173) 0px, transparent 50%) repeat scroll 0% 0%, 
+            radial-gradient(at 79% 82%, rgb(233, 109, 131) 0px, transparent 50%) repeat scroll 0% 0%,
+            radial-gradient(at 96% 10%, rgb(222, 81, 251) 0px, transparent 50%) repeat scroll 0% 0%,    
+            radial-gradient(at 42% 20%, rgb(116, 240, 251) 0px, transparent 50%) repeat scroll 0% 0%,
+            radial-gradient(at 4% 49%, rgb(203, 88, 218) 0px, transparent 50%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 0px, #a299ff 50%) repeat scroll 0% 0%;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background-image: url("background.jpg");
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.container .registration{
+  display: none;
+}
+#check:checked ~ .registration{
+  display: block;
+}
+#check:checked ~ .login{
+  display: none;
+}
+#check{
+  display: none;
+}
+.container .form{
+  padding: 2rem;
+}
+.form header{
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+.form a{
+  font-size: 16px;
+  color: blue;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.form input.button{
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+.signup{
+  color:black;
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: blue;
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ff99f5;
+  background-image:
+      radial-gradient(at 61% 4%, hsla(303, 91%, 61%, 1) 0px, transparent 50%),
+      radial-gradient(at 75% 66%, hsla(196, 91%, 79%, 1) 0px, transparent 50%),
+      radial-gradient(at 98% 88%, hsla(76, 87%, 78%, 1) 0px, transparent 50%),
+      radial-gradient(at 23% 16%, hsla(238, 96%, 77%, 1) 0px, transparent 50%),
+      radial-gradient(at 95% 65%, hsla(13, 91%, 75%, 1) 0px, transparent 50%),
+      radial-gradient(at 10% 79%, hsla(228, 96%, 69%, 1) 0px, transparent 50%),
+      radial-gradient(at 85% 58%, hsla(328, 81%, 68%, 1) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15rem 0;
+}
+
+.card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.lock-icon {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 12px;
+}
+
+.passInput {
+  margin-top: 15px;
+  width: 80%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid deepskyblue;
+  font-size: 15px;
+  color: white;
+  outline: none;
+}
+
+button {
+  margin-top: 15px;
+  width: 80%;
+  background-color: deepskyblue;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.success-message {
+  background-color: #4caf50;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
